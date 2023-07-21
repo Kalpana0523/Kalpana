@@ -3,7 +3,7 @@ def get_value(obj, key):
    value = obj
 
    for k in keys:
-       if isinstance(value, dict) or  k in value:
+       if isinstance(value, dict) and  k in value:
           value = value[k]
        else: 
           return None
